@@ -1,0 +1,70 @@
+<div class="container">
+<h1> Sign-Up Form</h1>
+<form [formGroup]="registerForm" >
+   
+     <div class="form-group" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || event.keyCode==32"><label>First Name</label>
+        <input type="text" class="form-control" formControlName="firstName">       
+    </div>
+</form> 
+
+<form [formGroup]="registerForm">
+    <div class="form-group">
+        <label for="lastName"> Last Name</label>
+        <input type="text" class="form-control" formControlName="lastName">
+    </div>
+</form>
+<!-- <form [formGroup]="registerForm"> -->
+    <!-- <div class="form-group">
+    <label for="mobileNumber">Mobile Number</label>  
+        <input formControlName="mobileNumber" id="mobileNumber" type="text" class="form-control">
+        <div *ngIf="registerForm.controls.mobileNumber.touched && registerForm.mobileNumber.invalid" class="alert alert-danger">   
+          <div *ngIf="registerForm.mobileNumber.errors.pattern">Please, Enter 10 digit Mobile Number.</div>  
+       </div> -->
+    <!-- </div> -->
+     <br>
+  <p>Complete the form to enable button.</p>
+<div >
+ 
+  <button  [disabled]="!registerForm.valid"(click)="onSubmit()" type="submit" style="background-color: aqua;">Submit</button>
+</div>
+
+<div class="alert alert-success alert-dismissible" role="alert" *ngIf="alert">
+  <button (click)="closealert()" type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  SignUp successfull!
+</div>
+<!-- <div class="alert alert-success alert-dismissible" role="alert" *ngIf="!alert">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  SignUp Not successfull!
+</div> -->
+
+<!-- <button type="button" (click)="updateProfile()">Update Profile</button> -->
+
+<br>
+<!-- <div [hidden]="!submitted">
+    <h3> Employee Details </h3>
+    <p>First Name: {{ registerForm.get('firstName')?.value }} </p>
+    <p> Last Name: {{ registerForm.get('lastName')?.value }} </p>
+  </div> -->
+  <p>Form Status: {{ registerForm.status }}</p> 
+  <!-- <mat-form-field>
+    <input matInput value="Disco party!" placeholder="Message" #message>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput value="Dance" placeholder="Action" #action>
+  </mat-form-field> -->
+  
+
+<!-- <div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+
+<div class="alert alert-success" role="alert">
+  A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">Good Morning</button>
+<button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-target="#my-alert" aria-label="Close"> Hello</button> -->

@@ -1,0 +1,26 @@
+div{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:black;
+}
+.card{
+    border-radius: 80px;
+    width: 500px;
+    margin-left: 385px;
+    background-color: turquoise;
+}
+img{
+    display: block;
+    width: auto;
+    height: auto;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: bisque;
+    text-align: right;
+}

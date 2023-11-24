@@ -1,0 +1,17 @@
+.body{
+    background-color: aqua;
+}
+.container {
+    
+    margin-top: 100px;
+    width: 600px;
+}
+
+.form-control{
+ 
+    display: flexbox;
+    align-items: center;
+
+}
+
+

@@ -1,0 +1,115 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="/list-emp"><img src="https://scontent.fidr4-1.fna.fbcdn.net/v/t39.30808-6/367476828_3323070741301257_9077748335688594157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=Ta76RiEhtiEAX_HVgrU&_nc_ht=scontent.fidr4-1.fna&oh=00_AfAyszaDo6Ii1YKVrHR9W-kEToY-SfqgymbDV5whWpBoCg&oe=64E7F4EA" alt="{{ title }}" style="height: 60px; width: 180px;"></a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="mainNavBar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="/login">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="col-md-6">  
+
+  <h2 class="text-center">{{empformlabel}}</h2>  
+
+  <form [formGroup]="editForm" novalidate class="form">  
+
+    <div class="form-group">  
+
+      <label for="empId">Employee Id:</label>  
+
+      <input type="number" formControlName="id" placeholder="Id" name="empId" class="form-control" id="empId">
+
+      <!-- <div class="alert  alert-danger" *ngIf="editForm.get['employee_name'].errors && addForm.get['employee_name'].touched"></div>  -->
+
+    </div>  
+
+ 
+
+    <div class="form-group">  
+
+      <label for="empName">Employee Name:</label>  
+
+      <input formControlName="employee_name" placeholder="Employee Name:" name="empName" class="form-control" id="empName">  
+
+      <!-- <div class="alert  alert-danger" *ngIf="editForm.get('employee_name').errors && addForm.get('employee_name').touched">   -->
+
+        <div class="alert  alert-danger" *ngIf="addForm.controls['employee_name'].errors && addForm.controls['employee_name'].touched">
+
+        Employee Name is required  
+
+      </div>  
+
+    </div>  
+
+ 
+
+    <div class="form-group">  
+
+      <label for="designation">Designation:</label>  
+
+      <input formControlName="designation" placeholder="Designation:" name="designation" class="form-control" id="designation">  
+
+      <!-- <div class="alert  alert-danger" *ngIf=" editForm.get('designation').errors && addForm.get('designation').touched">   -->
+
+        <div class="alert  alert-danger" *ngIf="addForm.controls['designation'].errors && addForm.controls['designation'].touched">
+
+        Field is required.    
+
+      </div>  
+
+    </div>
+
+
+
+    <div class="form-group">  
+
+      <label for="department">Department:</label>  
+
+      <input formControlName="department" placeholder="Department:" name="department" class="form-control" id="department">  
+
+      <!-- <div class="alert  alert-danger" *ngIf="editForm.get('department').errors && addForm.get('department').touched"> -->
+
+        <div class="alert  alert-danger" *ngIf=" addForm.controls['department'].errors && addForm.controls['department'].touched">
+
+        Field is required.  
+
+      </div>
+
+    </div>  
+
+
+
+   
+
+    <div class="form-group">  
+
+      <label for="emailid">Email:</label>  
+
+      <input formControlName="emailid" placeholder="Email:" name="emailid" class="form-control" id="emailid">  
+
+      <!-- <div class="alert  alert-danger" *ngIf="editForm.get('emailid').errors && addForm.get('emailid').touched">   -->
+
+        <div class="alert  alert-danger" *ngIf=" addForm.controls['emailid'].errors && addForm.controls['emailid'].touched">
+
+        Field is required.    
+
+      </div>  
+
+    </div>
+
+
+
+     <button style="margin-top: 10px;" class="btn btn-success" [disabled]='editForm.invalid' (click)="onUpdate()">Update</button>  
+
+     <button style="margin-top: 10px;" class="btn btn-danger" routerLink="/list-emp">Close</button>
+
+ 
+
+    <!-- <p>Form value: {{ editForm.value | json }}</p>     -->
+
+  </form>  
+
+</div>  

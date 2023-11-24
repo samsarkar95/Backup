@@ -1,0 +1,149 @@
+<form (ngSubmit)="onSubmit()">
+<div class="container">
+    <mat-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup" style="text-align: center;">
+                <ng-template matStepLabel>Primary Skill</ng-template>
+                <mat-form-field appearance="outline" style="width: 70%;">
+                    <mat-label>Select Primary Skill</mat-label>
+                    <mat-select [(value)]="primarySkill" [(ngModel)]="employee.primarySkill" id="primarySkill" name="primarySkill" [ngModelOptions]="{standalone: true}">
+                        <mat-option>None</mat-option>
+                        <mat-option value="Java">Java</mat-option>
+                        <mat-option value="Angular">Angular</mat-option>
+                        <mat-option value="Python">Python</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <!-- <p>You selected: <span style="font-weight: 500; color: blue; font-size: medium;">{{primarySkill}}</span> </p> -->
+                <div>
+                    <button mat-raised-button matStepperNext color="primary">Next</button>
+                </div>
+            </form>
+        </mat-step>
+
+
+
+        <!-- Skills Section -->
+
+
+        <mat-step>
+            <div style="text-align: center; ">
+
+                <ng-template matStepLabel>Skills</ng-template>
+                <mat-form-field appearance="outline" style="width: 70%;">
+                    <mat-label>Select Skills</mat-label>
+                    <mat-select [formControl]="skills" multiple>
+                        <mat-select-trigger>
+                            {{skills.value?.[0] || ''}}
+                            <span *ngIf="(skills.value?.length || 0) > 1" class="example-additional-selection">
+                                (+{{(skills.value?.length || 0) - 1}} {{skills.value?.length === 2 ? 'other' :
+                                'others'}})
+                            </span>
+                        </mat-select-trigger>
+                        <mat-option *ngFor="let skill of skillsList" [value]="skill">{{skill}}</mat-option>
+                    </mat-select>
+                </mat-form-field> &nbsp;
+
+
+                <!-- Add button  -->
+
+
+                <button mat-mini-fab color="primary" matTooltip="Add Skill" (click)="showOtherSkillInput()">
+                    <mat-icon>add</mat-icon>
+                </button>
+                
+                
+                <div>Your choosen skills are:  
+                    <i matTooltip="Maximum 3 skills can be chosed" class="fa fa-info-circle" style="color: #164ea3; cursor: pointer;"></i> <span
+                        style="color: blue; font-weight: 500; font-size: medium;"> {{skills.value}} </span></div> <br>
+                <!-- <div *ngIf="otherSkillsSet">Your other skills: <span
+                        style="color: blue; font-weight: 500; font-size: medium;">{{otherSkillsSet.value}}</span> </div> -->
+                <br>
+
+
+                    
+                <form style="text-align: center;">
+
+                    <mat-form-field appearance="outline" *ngIf="otherSkills" style="width: 70%; padding-right: 40px;">
+                        <mat-label>Other Skills</mat-label>
+                        <input matInput [formControl]="otherSkillsSet" placeholder="Other Skills">
+                    </mat-form-field>
+                </form>
+
+
+                <div>
+                    <button mat-stroked-button matStepperPrevious>Back</button> &nbsp;
+                    <button mat-raised-button matStepperNext color="primary">Next</button>
+                </div>
+
+            </div>
+        </mat-step>
+
+
+
+
+
+
+        <!--Certification part-->
+
+        <mat-step>
+            <div style="text-align: center;">
+
+                <ng-template matStepLabel>Certifications</ng-template>
+                <div style="margin: auto;">
+                    <form class="example-form" style="margin: auto; cursor: pointer;">
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <mat-label>Certifications</mat-label>
+                            <input matInput #message maxlength="500" placeholder="Enter your certifications details..." [(ngModel)]="employee.certification" id="certification" name="certification">
+                            <mat-hint align="start"><strong>Please add all certifications followed by ' , '</strong>
+                            </mat-hint>
+                            <mat-hint align="end">{{message.value.length}} / 500</mat-hint>
+                        </mat-form-field>
+                    </form>
+                </div>
+                &nbsp;
+
+                <div *ngIf="selectFormControl.value">You have choosen: <span
+                        style="color: blue; font-weight: 500; font-size: medium;">{{selectFormControl.value }}</span>
+                </div> <br>
+
+
+                <div>
+                    <button mat-stroked-button matStepperPrevious>Back</button> &nbsp;
+                    <button mat-raised-button matStepperNext color="primary">Next</button>
+                </div>
+            </div>
+        </mat-step>
+
+
+
+
+        <!-- Profile Update -->
+
+
+
+
+        <mat-step>
+            <ng-template matStepLabel>Upload Profile</ng-template>
+            <div style="margin: auto; text-align: center;">
+                <!-- <div style="text-align: center; margin: auto;">
+                    <div class="containerr" style="margin: auto; margin-bottom: 20px; margin-top: 15px;">
+                        <input type="file" id="file-input" (change)="onFileChange($event)">
+                        <label id="flb" for="file-input"><i class="fa-sharp fa-solid fa-upload"></i>
+                            &nbsp;
+                            Choose profile
+                        </label>
+                    </div>
+                    <div id="no-of-files" *ngIf="fileCount>0">
+                        <p>{{ fileCount }} file(s) uploaded</p>
+                    </div>
+                </div> -->
+            <div>
+                <button mat-stroked-button matStepperPrevious>Back</button> &nbsp;
+                <button mat-raised-button color="primary">Submit</button>
+            </div>
+        </div>
+        </mat-step>
+    </mat-stepper>
+</div>
+</form>

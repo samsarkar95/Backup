@@ -1,0 +1,86 @@
+{
+  "signupUsers": [
+    {
+      "fullName": "",
+      "mobileNumber": "",
+      "userName": "admin",
+      "password": "admin@1234"
+    }
+  ],
+  "Users": [
+    {
+      "userName": "admin",
+      "password": "admin@1234"
+    },
+    {
+      "userName": "Sourabh",
+      "password": "sourabh@1234"
+    },
+    {
+      "fullName": "Aniket Sarkar",
+      "userName": "hjgnvb12",
+      "mobileNumber": 7001741410,
+      "password": "123456y7uio",
+      "id": 1
+    },
+    {
+      "fullName": "sayantan dasgupta",
+      "userName": "jheegfhjawegfj12",
+      "mobileNumber": 2345678567,
+      "password": "2345678vfgbhnjm",
+      "id": "8b6c3181-51c0-4a0c-9b73-89a02f77ba6b"
+    },
+    {
+      "fullName": "Bishal Sarkar",
+      "userName": "bishalsarkar",
+      "mobileNumber": 6291182139,
+      "password": "Samrat@12345",
+      "id": "f6ea99be-c8cb-493f-9b22-95f608f67dba"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Shital Desai",
+      "designation": "SSE",
+      "department": "Finacle",
+      "emailid": "shittal.desai@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 3467238640
+    },
+    {
+      "id": 2,
+      "employee_name": "Priti Deokar",
+      "designation": "SE",
+      "department": "IVS",
+      "emailid": "priti.01@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 4823477823
+    },
+    {
+      "id": 3,
+      "employee_name": "Shruti Patil",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "shruti@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 7457475847
+    },
+    {
+      "id": 4,
+      "employee_name": "Shubhangi Kamble",
+      "designation": "SE",
+      "department": "ENG",
+      "emailid": "shubhangi@gmail.com"
+    },
+    {
+      "id": 5,
+      "employee_name": "Aditya",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "aditya@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 4238478475
+    }
+  ]
+}

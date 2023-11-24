@@ -1,0 +1,88 @@
+{
+  "signupUsers": [
+    {
+      "fullName": "",
+      "mobileNumber": "",
+      "userName": "admin",
+      "password": "admin@1234"
+    }
+  ],
+  "Users": [
+    {
+      "userName": "admin",
+      "password": "admin@1234"
+    },
+    {
+      "userName": "Sourabh",
+      "password": "sourabh@1234"
+    },
+    {
+      "userName": "bishalsarkar",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 789012131,
+      "password": "Samrat@12345",
+      "id": "91e24ec0-9298-4e50-9f33-6c28179959aa"
+    },
+    {
+      "userName": "samsarkar",
+      "fullName": "Sam Sarkar",
+      "mobileNumber": 8927160904,
+      "password": "Samrat@12345",
+      "id": "97efc8f3-45c0-421f-b521-4aa648b164d8"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Shital Desai",
+      "designation": "SSE",
+      "department": "Finacle",
+      "emailid": "shittal.desai@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 3467238640
+    },
+    {
+      "id": 2,
+      "employee_name": "Priti Deokar",
+      "designation": "SE",
+      "department": "IVS",
+      "emailid": "priti.01@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 4823477823
+    },
+    {
+      "id": 3,
+      "employee_name": "Shruti Patil",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "shruti@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 7457475847
+    },
+    {
+      "id": 4,
+      "employee_name": "Shubhangi Kamble",
+      "designation": "SE",
+      "department": "ENG",
+      "emailid": "shubhangi@gmail.com"
+    },
+    {
+      "id": 5,
+      "employee_name": "Aditya",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "aditya@gmail.com",
+      "salary": 89797,
+      "mobileNumber": 4238478475
+    },
+    {
+      "id": 1251693,
+      "employee_name": "Bishal Sarkar",
+      "designation": "Software Engineer",
+      "department": "ADM",
+      "emailid": "bishal.sarkar@gmail.com",
+      "salary": "21403",
+      "mobileNumber": "6291182139"
+    }
+  ]
+}

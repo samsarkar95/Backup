@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="text-center">
+      <h1>Sign In</h1>
+      <h6>Register Yourself !!</h6>
+    </div>
+    <div class="card">
+      <form [formGroup]="signupForm"  >
+        
+        <div class="mb-3">
+          <label for="fullname">Full Name</label>
+          <input type="text" formControlName="fullName" [ngClass]="{'is-invalid':submitted && signupForm.controls['errors']}"    class="form-control" />
+          <div *ngIf="submitted && signupForm.controls['fullName'].errors" class="text-danger" >
+            <div *ngIf="signupForm.controls['fullName'].errors['required']">Full Name is Required</div>
+          </div>
+        </div> 
+  
+        <div class="mb-3">
+          <label for="mobilenumber">Mobile Number</label>
+          <input type="number" formControlName="mobileNumber" [ngClass]="{'is-invalid':submitted && signupForm.controls['errors']}"  class="form-control"   />
+          <div *ngIf="submitted && signupForm.controls['mobileNumber'].errors" class="text-danger" >
+            <div *ngIf="signupForm.controls['mobileNumber'].errors['required']">Field is Required</div>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="username">UserName</label>
+          <input type="text"  formControlName="userName"  class="form-control"  />
+        </div>
+  
+        <div class="mb-3">
+          <label for="pwd">Password</label>
+          <input type="password" formControlName="paasword" class="form-control" />
+        </div>
+  
+        <button type="submit" (click)="signIn()" class="btn btn-primary" [disabled]="signupForm.controls['fullName' || 'mobileNumber' || 'username' || 'password'].invalid" >Sign In</button>
+      </form>
+      <a routerLink="/login">Already registered? Click to Login!!</a>
+    </div>
+  </div>
+  
+  

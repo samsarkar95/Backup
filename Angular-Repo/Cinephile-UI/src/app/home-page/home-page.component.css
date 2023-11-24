@@ -1,0 +1,13 @@
+ul img{
+    float: left;
+    width:  281px;
+    height: 400px;
+    object-fit: cover;
+}
+.carousel-control-prev{
+    background-color:black;
+}
+.carousel-control-next{
+    background-color: black;
+}
+

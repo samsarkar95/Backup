@@ -1,0 +1,972 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "movieName": "Avatar",
+      "Year": "2009",
+      "Released": "18 Dec 2009",
+      "Runtime": "162 min",
+      "Director": "James Cameron",
+      "Writer": "James Cameron",
+      "Language": "English, Spanish",
+      "Country": "USA, UK",
+      "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
+      "Metascore": "83",
+      "imdbRating": "7.9",
+      "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "imagePath": "assets/1.jpg",
+      "Genre": "Action, Adventure, Fantasy",
+      "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang"
+    },
+    {
+      "id": 2,
+      "movieName": "I Am Legend",
+      "Year": "2007",
+      "imagePath": "assets/2.jpg",
+      "Runtime": "101 min",
+      "Released": "14 Dec 2007",
+      "Director": "Francis Lawrence",
+      "Writer": "Mark Protosevich (screenplay), Akiva Goldsman (screenplay), Richard Matheson (novel), John William Corrington, Joyce Hooper Corrington",
+      "Genre": "Drama, Horror, Sci-Fi",
+      "Awards": "9 wins & 21 nominations.",
+      "Metascore": "65",
+      "imdbRating": "7.2",
+      "Language": "English",
+      "Country": "USA",
+      "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+      "Actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield"
+    },
+    {
+      "id": 3,
+      "movieName": "300",
+      "imagePath": "assets/3.jpg",
+      "Genre": "Action, Drama, Fantasy",
+      "Year": "2006",
+      "Released": "09 Mar 2007",
+      "Runtime": "117 min",
+      "Director": "Zack Snyder",
+      "Writer": "Zack Snyder (screenplay), Kurt Johnstad (screenplay), Michael Gordon (screenplay), Frank Miller (graphic novel), Lynn Varley (graphic novel)",
+      "Plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "16 wins & 42 nominations.",
+      "Metascore": "52",
+      "imdbRating": "7.7",
+      "Actors": "Gerard Butler, Lena Headey, Dominic West, David Wenham"
+    },
+    {
+      "id": 4,
+      "movieName": "The Avengers",
+      "imagePath": "assets/4.jpg",
+      "Genre": "Action, Sci-Fi, Thriller",
+      "Year": "2012",
+      "Released": "04 May 2012",
+      "Runtime": "143 min",
+      "Director": "Joss Whedon",
+      "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+      "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "Language": "English, Russian",
+      "Country": "USA",
+      "Awards": "Nominated for 1 Oscar. Another 34 wins & 75 nominations.",
+      "Metascore": "69",
+      "imdbRating": "8.1",
+      "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth"
+    }
+  ],
+  "users": [
+    {
+      "emailId": "raj@email.com",
+      "name": "raj",
+      "mobile": 9876543210,
+      "password": "123456789",
+      "id": 1
+    },
+    {
+      "emailId": "raj@email.com",
+      "name": "raj",
+      "mobile": 1234567890,
+      "password": "1234567890",
+      "id": 2
+    },
+    {
+      "emailId": "raj@email.com",
+      "name": "raj",
+      "mobile": 9876543210,
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "email": "Sandeep@gmail.com",
+      "name": "Sandeep M",
+      "number": 8904477702,
+      "password": "Sandee@89044",
+      "id": 4
+    },
+    {
+      "email": "bishalsarkar84@yahoo.com",
+      "name": "Bishal",
+      "number": 9830984605,
+      "password": "Bishal@123",
+      "id": 5
+    },
+    {
+      "email": "samrat@yahoo.com",
+      "name": "Sam",
+      "number": 9831058394,
+      "password": "Samrat@123",
+      "id": 6
+    },
+    {
+      "email": "samrat@yahoo.com",
+      "name": "Sam",
+      "number": 9831058394,
+      "password": "Samrat@123",
+      "id": 7
+    }
+  ],
+  "book": [
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6",
+        "A 7",
+        "A 8",
+        "A 9"
+      ],
+      "seatstoStore": [],
+      "totalamount": 2500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 1
+    },
+    {
+      "selectedSeats": [
+        "A 2",
+        "A 3"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 2
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 3
+    },
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 4
+    },
+    {
+      "selectedSeats": [
+        "B 6",
+        "B 5",
+        "B 4"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "3",
+      "selectedTime": "2",
+      "id": 5
+    },
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "1",
+      "id": 6
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7",
+        "A 8"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "3",
+      "selectedTime": "3",
+      "id": 7
+    },
+    {
+      "selectedSeats": [
+        "A 7",
+        "A 8"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 8
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 9
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "1",
+      "selectedTime": "3",
+      "id": 10
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "1",
+      "selectedTime": "3",
+      "id": 11
+    },
+    {
+      "selectedSeats": [
+        "A 7",
+        "A 8"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 12
+    },
+    {
+      "selectedSeats": [
+        "B 7",
+        "B 8",
+        "B 9"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 13
+    },
+    {
+      "selectedSeats": [
+        "D 12",
+        "D 13"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "3",
+      "selectedTime": "3",
+      "id": 14
+    },
+    {
+      "selectedSeats": [
+        "A 9",
+        "A 10"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 15
+    },
+    {
+      "selectedSeats": [
+        "A 8"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 16
+    },
+    {
+      "selectedSeats": [
+        "A 10",
+        "A 11"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 17
+    },
+    {
+      "selectedSeats": [
+        "A 6",
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 18
+    },
+    {
+      "selectedSeats": [
+        "F 6",
+        "F 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 19
+    },
+    {
+      "selectedSeats": [
+        "H 2",
+        "H 3"
+      ],
+      "seatstoStore": [],
+      "totalamount": 600,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 20
+    },
+    {
+      "selectedSeats": [
+        "A 4"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 21
+    },
+    {
+      "selectedSeats": [
+        "B 5"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 22
+    },
+    {
+      "selectedSeats": [
+        "A 12"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 23
+    },
+    {
+      "selectedSeats": [
+        "A 9",
+        "A 10"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 24
+    },
+    {
+      "selectedSeats": [
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 25
+    },
+    {
+      "selectedSeats": [
+        "A 9",
+        "A 10"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 26
+    },
+    {
+      "selectedSeats": [
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 27
+    },
+    {
+      "selectedSeats": [
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 28
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 29
+    },
+    {
+      "selectedSeats": [
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 30
+    },
+    {
+      "selectedSeats": [
+        "A 7"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 31
+    },
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 32
+    },
+    {
+      "selectedSeats": [
+        "A 3"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 33
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "2",
+      "id": 34
+    },
+    {
+      "selectedSeats": [
+        "A 2"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedTime": "3",
+      "id": 35
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 36
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "selectedDate": "",
+      "selectedTime": "",
+      "id": 37
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 38
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 39
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 40
+    },
+    {
+      "selectedSeats": [
+        "A 5"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 41
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "id": 42
+    },
+    {
+      "selectedSeats": [
+        "A 2",
+        "A 3"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 43
+    },
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 44
+    },
+    {
+      "selectedSeats": [
+        "A 3",
+        "A 4"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "selectedDate": [],
+      "selectedTime": [],
+      "cartId": "",
+      "eventId": 0,
+      "id": 45
+    },
+    {
+      "selectedSeats": [
+        "B 5",
+        "B 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 46
+    },
+    {
+      "selectedSeats": [
+        "A 5",
+        "A 6"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "id": 47
+    },
+    {
+      "selectedSeats": [
+        "I 11"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-15",
+      "showtime": "1",
+      "theatrename": "2",
+      "id": 48
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-15",
+      "showtime": "1",
+      "theatrename": "1",
+      "id": 49
+    },
+    {
+      "selectedSeats": [
+        "B 14"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "2",
+      "theatrename": "2",
+      "id": 50
+    },
+    {
+      "selectedSeats": [
+        "G 15"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "11:00",
+      "theatrename": "2",
+      "id": 51
+    },
+    {
+      "selectedSeats": [
+        "A 15",
+        "G 14"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "02:30",
+      "theatrename": "2",
+      "id": 52
+    },
+    {
+      "selectedSeats": [
+        "A 8"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "02:30",
+      "theatrename": "2",
+      "id": 53
+    },
+    {
+      "selectedSeats": [
+        "A 11"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "02:30",
+      "theatrename": "3",
+      "id": 54
+    },
+    {
+      "selectedSeats": [
+        "A 2"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "02:30",
+      "theatrename": "3",
+      "id": 55
+    },
+    {
+      "selectedSeats": [
+        "H 21"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-18",
+      "showtime": "06:00",
+      "theatrename": "4",
+      "id": 56
+    },
+    {
+      "selectedSeats": [
+        "N 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "02:30",
+      "theatrename": "1",
+      "id": 57
+    },
+    {
+      "selectedSeats": [
+        "H 18"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-19",
+      "showtime": "09:30",
+      "theatrename": "1",
+      "id": 58
+    },
+    {
+      "selectedSeats": [
+        "A 14"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "02:30",
+      "theatrename": "3",
+      "id": 59
+    },
+    {
+      "selectedSeats": [
+        "D 31"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-26",
+      "showtime": "11:00",
+      "theatrename": "1",
+      "id": 60
+    },
+    {
+      "selectedSeats": [
+        "A 1"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "02:30",
+      "theatrename": "3",
+      "id": 61
+    },
+    {
+      "selectedSeats": [
+        "H 24"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-18",
+      "showtime": "02:30",
+      "theatrename": "3",
+      "id": 62
+    },
+    {
+      "selectedSeats": [
+        "I 22"
+      ],
+      "seatstoStore": [],
+      "totalamount": 300,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "11:00",
+      "theatrename": "1",
+      "id": 63
+    },
+    {
+      "selectedSeats": [
+        "A 1",
+        "A 2"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "09:30",
+      "theatrename": " Screen 4",
+      "id": 64
+    },
+    {
+      "selectedSeats": [
+        "A 4",
+        "A 5"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "11:00",
+      "theatrename": " Screen 1",
+      "id": 65
+    },
+    {
+      "selectedSeats": [
+        "A 1",
+        "A 2"
+      ],
+      "seatstoStore": [],
+      "totalamount": 1000,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-16",
+      "showtime": "11:00",
+      "theatrename": " Screen 1",
+      "id": 66
+    },
+    {
+      "selectedSeats": [
+        "I 31",
+        "I 30"
+      ],
+      "seatstoStore": [],
+      "totalamount": 600,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-24",
+      "showtime": "11:00",
+      "theatrename": " Screen 2",
+      "id": 67
+    },
+    {
+      "selectedSeats": [
+        "A 10"
+      ],
+      "seatstoStore": [],
+      "totalamount": 500,
+      "cartId": "",
+      "eventId": 0,
+      "showdate": "2022-03-17",
+      "showtime": "11:00",
+      "theatrename": " Screen 1",
+      "id": 68
+    }
+  ]
+}

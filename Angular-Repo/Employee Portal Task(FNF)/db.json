@@ -1,0 +1,67 @@
+{
+  "signupUsers": [
+    {}
+  ],
+  "Users": [
+    {
+      "userName": "priti123",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "Priti@123",
+      "id": "7ed8ab10-fd01-4f52-8d7c-03b9bb48614d"
+    },
+    {
+      "userName": "priti",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "priti@123",
+      "id": "82421eec-27dd-4cae-90d7-53eef05a57b5"
+    },
+    {
+      "userName": "admin",
+      "fullName": "Admin",
+      "mobileNumber": "3463746374",
+      "password": "admin",
+      "id": "9135cabd-529a-46cd-8c0e-3c4ba751b05d"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "9830984605",
+      "password": "bishal@123",
+      "id": "15b84103-d207-42bd-99ba-bde9fdaa7ed0"
+    },
+    {
+      "userName": "viku.si",
+      "fullName": "Vikram Singh",
+      "mobileNumber": "1234432112",
+      "password": "viku@si",
+      "id": "ae7fdc17-c25c-441e-b77d-a22f2e6671d2"
+    },
+    {
+      "userName": "aniket",
+      "fullName": "Aniket Sarkar",
+      "mobileNumber": "7001741410",
+      "password": "a",
+      "id": "30df81bb-d38c-4745-8dcf-f9422665359a"
+    },
+    {
+      "userName": "bishal213",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "6291821394",
+      "password": "bishal",
+      "id": "c4ac3f81-2ed4-4e9e-b282-7f2054ba0d5e"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Bishal Sarkar",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "bishalsarkar84@gmail.com",
+      "skills": "Data Science",
+      "mobileNumber": "9830984605"
+    }
+  ]
+}

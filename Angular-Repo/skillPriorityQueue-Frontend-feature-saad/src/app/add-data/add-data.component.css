@@ -1,0 +1,80 @@
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 8px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  min-height: 300px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+}
+
+.example2-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example2-full-width {
+  min-width: 50px;
+  max-width: 220px;
+
+  width: 100%;
+
+}
+
+.containerr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #1354b5;
+  padding: 2px;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+#file-input[type="file"] {
+  display: none;
+}
+
+#flb {
+  display: block;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* To change Border color */
+
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing{
+  border-color: #4e7dc5;
+  border-width: 2px;
+}
+
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing{
+  border-color: #4e7dc5;
+}
+::ng-deep .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__leading,
+::ng-deep .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__notch,
+::ng-deep .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__trailing{
+  border-color: #4e7dc5;
+}
+

@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #461057;">
+  <a class="navbar-brand" href="/list-emp"><img src="assets\logonew.png" alt="{{ title }}" style="height: 60px; width: 120px;margin-left: 30px;"></a>
+  <!-- <a class="navbar-brand"><img src="https://scontent.fidr4-3.fna.fbcdn.net/v/t39.30808-6/371059373_3326435944298070_984084667355181561_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=zraxcsPHLGgAX_vaYaP&_nc_ht=scontent.fidr4-3.fna&oh=00_AfCKTxNthKPZ2DbqKQONsJaXQ8emizN8CUO0IQ3GNp72qw&oe=64EF114D" alt="{{ title }}" style="height: 60px; width: 180px;margin-left: 30px;"></a> -->
+  <header><h1 style="margin-left: 400px; font-family: 'Times New Roman'; font-size: 2em; font-weight: bold; color: bisque;">Employee Portal</h1></header>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<div class="login-page" style="overflow-y: hidden;">
+  <div class="form">
+    <div class="login">
+      <div class="login-header">
+    <h3 style="text-align: center; font-weight: bold;">SignUp</h3>
+    <p>Register Yourself !!</p>
+  </div>
+</div>
+    <form [formGroup]="signupForm"  class="login-form">
+      
+      <div class="mb-3">
+        <label for="fullname">Full Name</label>
+        <input type="text" formControlName="fullName" [ngClass]="{'is-invalid':submitted && signupForm.controls.errors}"    class="form-control" />
+        <div *ngIf="submitted && signupForm.controls.fullName.errors" class="text-danger" >
+          <div *ngIf="signupForm.controls.fullName.errors.required">Full Name is Required.*</div>
+        </div>
+      </div> 
+
+      <div class="mb-3">
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="number" formControlName="mobileNumber" [ngClass]="{'is-invalid':submitted && signupForm.controls.errors}"  class="form-control"   />
+        <div *ngIf="submitted && signupForm.controls.mobileNumber.errors" class="text-danger" >
+          <div *ngIf="signupForm.controls.mobileNumber.errors.required">Field is Required.*</div>
+          <!-- <div *ngIf="!signupForm.controls.mobileNumber.errors.valid || signupForm.controls.mobileNumber.dirty">Mobile Number must be of 10 digits</div> -->
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="userName">User Name</label>
+        <input type="text"  formControlName="userName" [ngClass]="{'is-invalid':submitted && signupForm.controls.errors}" class="form-control"  />
+        <div *ngIf="submitted && signupForm.controls.userName.errors" class="text-danger" >
+        <div *ngIf="signupForm.controls.userName.errors.required">Field is Required.*</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" class="form-control" />
+        <div *ngIf="submitted && signupForm.controls.password.errors" class="text-danger" >
+          <div *ngIf="!signupForm.controls.password.errors.valid">Field is Required.*</div>
+        </div>
+      </div>
+
+      <button type="submit" (click)="signUp()" class="btn" style="background-color: #ffae00;" [disabled]="!signupForm.controls['fullName' || 'mobileNumber' || 'username' || 'password'].valid" >Sign up</button>
+      
+      <button routerLink="/login" style="margin-top: 10px;" class="btn btn-primary">Login</button>
+    </form>
+</div>
+

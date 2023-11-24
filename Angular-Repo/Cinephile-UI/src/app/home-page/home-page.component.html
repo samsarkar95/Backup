@@ -1,0 +1,50 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="text-align: center;">
+  <div class="carousel-indicators">
+    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../assets/a.jpg" class="d-block w-100" alt="logo" width="800" height="400" class="center">
+    </div>
+
+    <div>
+      <div class="carousel-item" *ngFor="let image of datas">
+        <img src="{{image.path}}" class="d-block w-100" alt="logo" width="800" height="400" class="center">
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden" style="color: black;">Previous</span>
+  </button>
+  <button class="carousel-control-next" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden" style="color: black;">Next</span>
+  </button>
+
+</div>
+
+
+<h3>Recomended Movies</h3>
+
+<div class="container-fluid">
+
+  <div class="row" *ngIf="movies?.length">
+    <!-- Add the code to load all the movie details -->
+    <div class="col-md-3 mt-3" id="movie" *ngFor="let movie of movies">
+    <div class="card shadow" style="opacity: 0.8;">
+    <img class="card-img-top" src="{{movie.imagePath}}" alt="image" height="250px">
+    <div class="card-body">
+      <h5 class="cardTitle">{{movie.movieName}}</h5>
+      <h7><b>Actors: </b>{{movie.Actors}}</h7>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

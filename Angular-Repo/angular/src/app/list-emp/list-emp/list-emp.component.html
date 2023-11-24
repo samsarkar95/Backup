@@ -1,0 +1,40 @@
+<div class="footer">
+  <button class="btn btn-primary">Logout</button>
+</div>
+<div class="col-md-12">
+  <button (click)="addEmp()" class="btn btn-info" style="margin-left:20px"> Add Employee</button>
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <label>
+        <h5>Filter Details: &nbsp; </h5>
+      </label>
+      <input type="text" [(ngModel)]="searchText" placeholder="Search by name" name="search">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass">search</i> </button>
+    </form>
+  </div>
+  
+  <h2> User Details</h2>
+  <div class="table-responsive table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id <span> <button type="button" style="color: brown;" (click)="sort()">click</button></span></th>
+          <th>Employee Name <span> <button type="button" style="color: brown;"(click)="sortname()">click</button></span></th>
+          <th>Designation</th>
+          <th>Department</th>
+          <th>Email Id</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employees|filter:searchText | orderBy: order ">
+          <td>{{emp.id}}</td>
+          <td>{{emp.employee_name}}</td>
+          <td>{{emp.designation}}</td>
+          <td>{{emp.department}}</td>
+          <td>{{emp.emailid}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

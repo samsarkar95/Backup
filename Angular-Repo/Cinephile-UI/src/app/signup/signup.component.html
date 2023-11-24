@@ -1,0 +1,59 @@
+<section class="vh-100" style="background-color: #ffffff00;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+          <!-- Bind the form to loginForm and invoke logIn() method -->
+              <form [formGroup]="registerForm" (ngSubmit)="register()">
+                <h2>Create New Account</h2>
+                <div class="mb-3 mt-3">
+                  <!-- Create input fields with appropriate labels and formcontrols for Email Address -->
+                  <label for="email" id="mail">Email</label>
+                  <input id="mail" type="email" class="form-control" placeholder="enter your mail" formControlName="email">
+                  <div  class="text-danger" *ngIf="registerForm.controls.email.dirty && registerForm.controls.email.invalid">
+                    <!-- Message for required error ==> This field is required -->
+                   <!-- Message for correct format email error ==> The correct email is required -->
+                   <span *ngIf="registerForm.controls.email.errors.required">Field is required</span>
+                   <span *ngIf="registerForm.controls.email.errors.pattern">The correct email is required </span>
+                  </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="name" id="uname">Name</label>
+                    <input id="uname" type="text" class="form-control" placeholder="enter your name" formControlName="name">
+                    <div class="text-danger" *ngIf="registerForm.controls.name.dirty && registerForm.controls.name.invalid">
+                        <span *ngIf="registerForm.controls.name.errors.required">Field is required</span>
+                        <span *ngIf="registerForm.controls.name.errors.pattern">The correct name is required</span>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="number" id="mobileno">Mobile No</label>
+                    <input id="number" type="number" class="form-control" placeholder="enter mobile number" formControlName="number">
+                    <div class="text-danger" *ngIf="registerForm.controls.number.dirty && registerForm.controls.number.invalid">
+                        <span *ngIf="registerForm.controls.number.errors.required">Field is required</span>
+                        <span *ngIf="registerForm.controls.number.errors.pattern">enter valid number</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                   <!-- Create input fields with appropriate labels and formcontrols for Password -->
+                   <label for="password" id="pwd">Password</label>
+                  <input id="pwd" type="password" class="form-control" placeholder="enter your password" formControlName="password">
+                 <div class="text-danger" *ngIf="registerForm.controls.password.dirty && registerForm.controls.password.invalid">
+                  <!-- Message for required error ==> This field is required -->
+                   <!-- Message for correct format password error ==> The correct password is required -->
+                   <span *ngIf="registerForm.controls.password.errors.required">This field is required</span>
+                   <span *ngIf="registerForm.controls.password.errors.pattern">The correct password is required</span>
+                   <span *ngIf="registerForm.controls.password.errors.minlength">Minimum of 7 characters required</span>
+                   <span *ngIf="registerForm.controls.password.errors.minlength">maximum of 20 characters</span>
+                   </div>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Register</button><hr>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

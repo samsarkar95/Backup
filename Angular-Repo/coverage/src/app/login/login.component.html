@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand"><img src="https://scontent.fidr4-1.fna.fbcdn.net/v/t39.30808-6/367476828_3323070741301257_9077748335688594157_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=Ta76RiEhtiEAX_HVgrU&_nc_ht=scontent.fidr4-1.fna&oh=00_AfAyszaDo6Ii1YKVrHR9W-kEToY-SfqgymbDV5whWpBoCg&oe=64E7F4EA" alt="{{ title }}" style="height: 60px; width: 180px;"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="login-page">
+    <div class="form">
+            <div class="login">
+                <div class="login-header">
+                  <h3 style="text-align: center;">LOGIN</h3>
+                  <p>Please enter your credentials to login.</p>
+                </div>
+              </div>
+            <div class="panel-body padding">
+                <form class="login-form" [formGroup]="loginForm">
+                    <div class="form-group" >
+                        <label for="name" class="col-xs-4 control-label" style="text-align:left">User Name:</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" [ngClass]="{'is-invalid':submitted && loginForm.controls.errors}" formControlName="userName">
+                            <!-- <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['userName'].dirty">
+                                <div *ngIf="loginForm.controls['userName'].errors?.['required']" style="color:red">
+                                    UserName is required
+                                </div>
+                            </div> -->
+                            <div *ngIf="submitted && loginForm.controls.userName.errors" class="text-danger" >
+                                <div *ngIf="loginForm.controls.userName.errors.required">Field is Required</div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="password" class="col-xs-4 control-label" style="text-align:left">Password:</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" [ngClass]="{'valid':loginForm.controls['password'].valid, 'invalid':loginForm.controls['password'].invalid && !loginForm.controls['password'].pristine}" formControlName="password">
+                            <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['password'].dirty">
+                                <div *ngIf="loginForm.controls['password'].errors?.['required']" style="color:red">
+                                    Password is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <span class="col-xs-4"></span>
+                        <div class="col-xs-3">
+                            <button (click)="onSubmit()" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+                            <br/>
+                            <br/>
+                            <button routerLink="/signup" class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    

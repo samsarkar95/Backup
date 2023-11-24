@@ -1,0 +1,60 @@
+<div class="col-md-6">  
+    <form [formGroup]="addForm" novalidate class="form">  
+      <div class="form-group">  
+        <label for="empId">Employee Id:</label>  
+        <input type="number" formControlName="id" placeholder="Id" name="empId" class="form-control" id="empId">  
+        <div class="alert  alert-danger" *ngIf="addForm.controls['employee_name'].errors && addForm.controls['employee_name'].touched">  
+          Employee id is required.  
+        </div>
+      </div>  
+    
+      <div class="form-group">  
+        <label for="empName">Employee Name:</label>  
+        <input formControlName="employee_name" placeholder="Employee Name" name="empName" class="form-control" id="empName">  
+        <div class="alert  alert-danger" *ngIf="addForm.controls['employee_name'].errors && addForm.controls['employee_name'].touched">  
+          Employee Name is required.  
+        </div>
+      </div>  
+      
+      <div class="form-group">  
+        <label for="designation">Designation:</label>
+        <!-- <select #select placeholder="designation" name="designation" class="form-control" id="designation">
+          <option value ="0"></option>
+          <option value ="1">System Engineer</option>
+          <option value ="2">Senior System Engineer</option>
+          <option value ="3">Technology Lead</option>
+          <option value ="3">Project Manager</option>
+          <option value ="3">Associate Consultant</option>
+          </select>   -->
+        <input formControlName="designation" placeholder="designation" name="designation" class="form-control" id="designation">  
+        <div class="alert  alert-danger" *ngIf="addForm.controls['designation'].errors && addForm.controls['designation'].touched">  
+          Designation is required. 
+        </div>  
+      </div>  
+    
+      <div class="form-group">  
+        <label for="department">Department:</label>  
+        <!-- <select #select placeholder="department" name="department" class="form-control" id="department">
+          <option value ="0"></option>
+          <option value ="1">IVS</option>
+          <option value ="2">DX</option>
+          <option value ="3">ADM</option>
+          <option value ="3">SAP</option>
+          <option value ="3">ORACLE</option>
+          </select> -->
+        <input formControlName="department" placeholder="department" name="department" class="form-control" id="department">  
+        <div class="alert  alert-danger" *ngIf=" addForm.controls['department'].errors && addForm.controls['department'].touched">  
+          Department field is required 
+        </div>  
+      </div>  
+      <div class="form-group">  
+        <label for="emilid">EmailId:</label>  
+        <input formControlName="emailid" placeholder="emailid" name="emailid" class="form-control" id="emailid">  
+        <div class="alert  alert-danger" *ngIf=" addForm.controls['emailid'].errors && addForm.controls['emailid'].touched">  
+          EmailId is required.  
+        </div>  
+      </div>  
+      <button class="btn btn-success" (click)="onSubmit()" disabled="addForm.invalid" >save</button>  
+      <!-- <p>Form value: {{ addForm.value | json }}</p>   -->
+    </form>  
+  </div> 

@@ -1,0 +1,18 @@
+table,td,th{
+    border: 3px solid black;
+    width:1000px;
+    margin-left: 10%;
+}
+h2{
+    margin-left: 43%;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    margin-left:20px;
+}
+.footer{
+    margin-left: 90%;
+}
+/* .bg{
+    background-image: url("assets/UsersDetails.png");
+} */ 

@@ -1,0 +1,94 @@
+{
+  "signupUsers": [
+    {}
+  ],
+  "Users": [
+    {
+      "userName": "priti123",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "Priti@123",
+      "id": "7ed8ab10-fd01-4f52-8d7c-03b9bb48614d"
+    },
+    {
+      "userName": "priti",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "priti@123",
+      "id": "82421eec-27dd-4cae-90d7-53eef05a57b5"
+    },
+    {
+      "userName": "admin",
+      "fullName": "Admin",
+      "mobileNumber": "3463746374",
+      "password": "admin",
+      "id": "9135cabd-529a-46cd-8c0e-3c4ba751b05d"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "9830984605",
+      "password": "bishal@123",
+      "id": "15b84103-d207-42bd-99ba-bde9fdaa7ed0"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "9830984605",
+      "password": "bishal@123",
+      "id": "01cb41b3-629b-4505-a292-e4b0e0ab4dd5"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "9830984605",
+      "password": "bishal@123",
+      "id": "e1e97329-7030-482e-92c4-25999a672fa7"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "9830984605",
+      "password": "bishal@123",
+      "id": "c8ad22fb-35fe-4708-a3ca-59ffdab13b9e"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Mansi Sharma",
+      "designation": "Technology lead",
+      "department": "DX",
+      "emailid": "mansi23@gmail.com",
+      "skills": "Angular",
+      "mobileNumber": "6876878778"
+    },
+    {
+      "id": 2,
+      "employee_name": "Priti deokar",
+      "designation": "system engineer",
+      "department": "IVS",
+      "emailid": "priti@gmail.com",
+      "skills": "Python",
+      "mobileNumber": "1234567890"
+    },
+    {
+      "id": 4,
+      "employee_name": "Mansi Sharma",
+      "designation": "Technology lead",
+      "department": "DX",
+      "emailid": "mansi23@gmail.com",
+      "skills": "python",
+      "mobileNumber": "6876878778"
+    },
+    {
+      "id": 5,
+      "employee_name": "Shubhangi  Kamble",
+      "designation": "system engineer",
+      "department": "ECSADMC",
+      "emailid": "shubhangi13@gmail.com",
+      "skills": "Springboot",
+      "mobileNumber": "6486376423"
+    }
+  ]
+}

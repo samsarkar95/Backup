@@ -1,0 +1,193 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #461057;">
+  <a class="navbar-brand" href="/list-emp"><img src="assets\logonew.png" alt="{{ title }}" style="height: 60px; width: 120px;margin-left: 30px;"></a>
+  <header><h1 style="margin-left: 380px; font-family: 'Times New Roman'; font-size: 2em; font-weight: bold; color: bisque;">Add Employee Form</h1></header>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="mainNavBar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><button class="nav-link" class="btn btn-danger" routerLink="/login" style="margin-right: 30px;">Logout</button></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="col-md-6">  
+
+  <!-- <h2 class="text-center">Add Employee</h2> -->
+
+  <form [formGroup]="addForm" novalidate class="form">  
+
+    <div class="form-group">  
+
+      <label for="empId">Employee Id:</label>  
+
+      <input type="number" formControlName="id" placeholder="Id" name="empId" class="form-control" id="empId">  
+
+      <div style="color: red;" *ngIf="addForm.controls['id'].errors && addForm.controls['id'].touched">  
+
+        Employee id is required.*  
+
+      </div>
+
+    </div>  
+
+ 
+
+    <div class="form-group">  
+
+      <label for="empName">Employee Name:</label>  
+      
+      <input  formControlName="employee_name" placeholder="Employee Name" name="empName" class="form-control" id="empName">  
+
+      <!-- <div style="color: red;" *ngIf="addForm.controls['employee_name'].errors && addForm.controls['employee_name'].touched">  
+        Name should start with capital letter.*  
+      </div> -->
+      <!-- && addForm.controls.employee_name.errors?.required -->
+      <div style="color: red;"*ngIf="addForm.controls.employee_name.errors?.pattern ">Special Characters are not allowed !!!</div>
+      
+      <!-- <div style="color: red;" *ngIf="addForm.controls.employee_name.errors.required">Employee Name is Required.*</div> -->
+    </div>  
+
+   
+
+    <div class="form-group">  
+
+      <label for="designation">Designation:</label>
+
+       <!-- <select #select placeholder="designation" name="designation" class="form-control" id="designation">
+
+        <option value ="0">--Select Designation--</option>
+
+        <option value ="1">System Engineer</option>
+
+        <option value ="2">Senior System Engineer</option>
+
+        <option value ="3">Technology Lead</option>
+
+        <option value ="3">Project Manager</option>
+
+        <option value ="3">Associate Consultant</option>
+
+        </select>    -->
+
+      <input formControlName="designation" placeholder="Designation" name="designation" class="form-control" id="designation">   
+
+      <div style="color: red;" *ngIf="addForm.controls['designation'].errors && addForm.controls['designation'].touched">  
+
+        Designation is required.*
+
+      </div>  
+
+    </div>  
+
+ 
+
+    <div class="form-group">  
+
+      <label for="department">Department:</label>  
+
+       <!-- <select #select placeholder="department" name="department" class="form-control" id="department">
+
+        <option value ="0">--Select Department--</option>
+
+        <option value ="1">IVS</option>
+
+        <option value ="2">DX</option>
+
+        <option value ="3">ADM</option>
+
+        <option value ="3">SAP</option>
+
+        <option value ="3">ORACLE</option>
+
+        </select>  -->
+
+      <input formControlName="department" placeholder="Department" name="department" class="form-control" id="department">   
+
+      <div style="color: red;" *ngIf=" addForm.controls['department'].errors && addForm.controls['department'].touched">  
+
+        Department field is required.*
+
+      </div>  
+
+    </div>  
+
+
+
+    <div class="form-group">  
+
+      <label for="emilid">EmailId:</label>  
+      <!-- pattern=".+gmail\.com" -->
+      <input type="email"  formControlName="emailid" placeholder="Email Id" name="emailid" class="form-control" id="emailid">  
+
+      <div style="color: red;" *ngIf=" addForm.controls['emailid'].errors && addForm.controls['emailid'].touched">  
+
+        EmailId should be abc@example.com.* 
+
+      </div>  
+      <!-- <div style="color: red;" *ngIf=" addForm.controls['emailid'].errors?.pattern && addForm.controls['emailid'].touched">  
+
+        EmailId should be abc@example.com.* 
+
+      </div>   -->
+
+    </div>  
+
+    <div class="form-group">  
+
+      <label for="skills">Skills:</label>  
+
+        
+<input type= "text" formControlName="skills" placeholder="skills" name="skills" class="form-control" id="skills">
+      <div style="color: red;" *ngIf="addForm.controls['skills'].errors && addForm.controls['skills'].touched">  
+
+        Skills are required.*  
+
+      </div>
+
+      <!-- <select #select name="skills"  class="form-control" id="skills">
+
+        <option value ="0">--Select Skill--</option>
+
+        <option value ="1">Python</option>
+
+        <option value ="2">Java</option>
+
+        <option value ="3">Angular</option>
+
+        <option value ="3">SpringBoot</option>
+
+        <option value ="3">AWS</option>
+
+        </select>  -->
+
+    </div>  
+
+    <div class="form-group">  
+
+      <label for="mobileNumber">Mobile Number:</label>  
+      <!-- pattern="[0-9]{10}" --> 
+   <input type="number" formControlName="mobileNumber" placeholder="Mobile Number" name="mobileNumber" class="form-control" id="mobileNumber">
+   
+      <div style="color: red;" *ngIf="addForm.controls['mobileNumber'].errors.pattern && addForm.controls['mobileNumber'].touched">  
+
+        MObile Number should contain 10 digits.*  
+
+      </div>
+      <!-- <div style="color: red;"*ngIf="addForm.controls.mobileNumber.errors?.pattern ">Mobile number is not 10 digit!!!</div> -->
+      <!-- <div *ngIf="addForm.controls.mobileNumber.errors?.pattern">Mobile number is not 10 digit</div> -->
+    </div>  
+
+    
+
+    <button class="btn btn-success" (click)="onSubmit()" [disabled]="addForm.invalid" >save</button>  
+
+    <button style="margin-top: 10px;" class="btn btn-danger" routerLink="/list-emp">Close</button>
+
+    <button type="reset" style="margin-top: 10px;margin-bottom: 40px;" class="btn btn-danger" >Reset</button>
+     <!-- <p>Form value: {{ addForm.value | json }}</p>   -->
+
+  </form>  
+
+</div>
+

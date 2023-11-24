@@ -1,0 +1,45 @@
+<div class="container container-styles">
+    <div class="col-xs-7 col-xs-offset-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Login</div>
+            <div class="panel-body padding">
+                <form class="form-horizontal" [formGroup]="loginForm">
+                    <div class="form-group" >
+                        <label for="name" class="col-xs-4 control-label" style="text-align:left">UserName:</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" [ngClass]="{'is-invalid':submitted && loginForm.controls.errors}" formControlName="userName">
+                            <!-- <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['userName'].dirty">
+                                <div *ngIf="loginForm.controls['userName'].errors?.['required']" style="color:red">
+                                    UserName is required
+                                </div>
+                            </div> -->
+                            <div *ngIf="submitted && loginForm.controls.userName.errors" class="text-danger" >
+                                <div *ngIf="loginForm.controls.userName.errors.required">Field is Required</div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="password" class="col-xs-4 control-label" style="text-align:left">Password:</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" [ngClass]="{'valid':loginForm.controls['password'].valid, 'invalid':loginForm.controls['password'].invalid && !loginForm.controls['password'].pristine}" formControlName="password">
+                            <div *ngIf="loginForm.controls['password'].errors && loginForm.controls['password'].dirty">
+                                <div *ngIf="loginForm.controls['password'].errors?.['required']" style="color:red">
+                                    Password is required
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <span class="col-xs-4"></span>
+                        <div class="col-xs-3">
+                            <button (click)="onSubmit()" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+                        </div>
+                    </div>
+                </form>
+                <a routerLink="/signup">New User? Click to signup!!</a>
+            </div>
+        </div>
+    </div>
+</div>
+    

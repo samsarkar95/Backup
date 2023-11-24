@@ -1,0 +1,48 @@
+
+<div style="text-align:center">
+</div>
+<div class="col-lg-12 seat-container">
+    <h3>
+        Seat Chart Layout
+    </h3>
+     <h1>Hello World</h1>
+     <h2>Good Afternoon</h2>
+     <h3>hii guys</h3>
+     <h4>i am From West Bengal</h4>
+    <div *ngFor="let seatrow of seatmap ">
+        <div class="col-12 pricing-label"
+            *ngIf="seatChartConfig?.showRowWisePricing && seatrow.seatPricingInformation != ''">
+            {{seatrow.seatPricingInformation}}</div>
+        <div class="seatrow container">
+            <div *ngIf="seatChartConfig?.showRowsLabel">
+                <div class="row-label"> {{seatrow.seatRowLabel}} </div>
+            </div>
+            <div *ngFor="let seatobj of seatrow.seats">
+                <div class="seat-item seat-space" style="color:white ; background-color:white"
+                    *ngIf="seatobj.seatLabel == ''"> &nbsp; </div>
+                <div tooltip="Seat : {{seatobj.seatLabel}} | Price : {{seatobj.price}}Rs" placement="top"
+                    [ngClass]="{ 'seat-item' : true , 'seat-available' : seatobj.status == 'available' ,'seat-booked' : seatobj.status == 'booked' ,'seat-unavailable' : seatobj.status == 'unavailable' }"
+                    (click)="selectSeat(seatobj)"
+                    *ngIf="(seatobj.status == 'available' || seatobj.status == 'booked' )&& seatobj.seatLabel != ''">
+                    {{seatobj.seatNo}}</div>
+
+                <div tooltip="Seat not available" placement="top"
+                    [ngClass]="{ 'seat-item' : true , 'seat-unavailable' : true }"
+                    *ngIf="seatobj.status == 'unavailable' && seatobj.seatLabel != ''">{{seatobj.seatNo}}</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary">
+            <h4>---Eyes this way please---</h4>
+        </button>
+    </div>
+
+</div>
+
+
+
+
+<!-- Give appropriate code to show the selected seats,Number of seats,total amount -->
+

@@ -1,0 +1,255 @@
+{
+  "signupUsers": [
+    {}
+  ],
+  "Users": [
+    {
+      "userName": "priti123",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "Priti@123",
+      "id": "7ed8ab10-fd01-4f52-8d7c-03b9bb48614d"
+    },
+    {
+      "userName": "priti",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "priti@123",
+      "id": "82421eec-27dd-4cae-90d7-53eef05a57b5"
+    },
+    {
+      "userName": "samsarkar55",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9242343024,
+      "password": "Samrat@12345",
+      "id": "aebd9536-3575-4128-af2c-5f8e0f3f68df"
+    },
+    {
+      "userName": "samsarkar55",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058931,
+      "password": "Samrat@12345",
+      "id": "a6917527-287d-4d85-a74f-10161d4e3a4f"
+    },
+    {
+      "userName": "samsarkar55",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058933,
+      "password": "Samrat@12345",
+      "id": "6b930f8d-77b7-4c87-a7f6-7d3805e36389"
+    },
+    {
+      "userName": "sa231ff",
+      "fullName": "Bsiahfa",
+      "mobileNumber": 9485037852,
+      "password": "Samrat@12345",
+      "id": "b37632ab-e97d-46c2-90b9-d5fdec8798e9"
+    },
+    {
+      "userName": "asas21`",
+      "fullName": "SamSarkar",
+      "mobileNumber": 2121212123,
+      "password": "12121",
+      "id": "cbaecc76-70ae-4476-859e-132950f68977"
+    },
+    {
+      "userName": "asmig",
+      "fullName": "sasaasa",
+      "mobileNumber": 8394572045,
+      "password": "121211214a",
+      "id": "1a712ee2-0992-4037-87d2-da7f6e3fc237"
+    },
+    {
+      "userName": "asmigas",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058955,
+      "password": "121211214a1ss",
+      "id": "4e2fced6-c3fd-422a-8c03-11bc704498f7"
+    },
+    {
+      "userName": "asmigas",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058933,
+      "password": "121211214a1ss",
+      "id": "10f86b61-2ee1-4a8d-9983-09554aa7826b"
+    },
+    {
+      "userName": "asmigas",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 2121212120,
+      "password": "121211214a1ss",
+      "id": "b9705cd2-406f-4b5f-aa91-f48c191f2be2"
+    },
+    {
+      "userName": "asmigas",
+      "fullName": "Lasbfgioa Sarkahr",
+      "mobileNumber": 9482903753,
+      "password": "121211214a1ss",
+      "id": "87fd85f9-fc5d-450a-91b9-ed68a330be3f"
+    },
+    {
+      "userName": "meirtod",
+      "fullName": "Gawifwqwre Sarkar",
+      "mobileNumber": 5837592732,
+      "password": "121211214a1ssas",
+      "id": "e13ef538-3527-4c87-b40f-b7872f9fe41b"
+    },
+    {
+      "userName": "asmi3rr4",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9847294325,
+      "password": "121211214a1ss",
+      "id": "62a95925-0a90-487b-b2a1-dc23ffc04211"
+    },
+    {
+      "userName": "asm",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 5749375921,
+      "password": "121211214a1ss",
+      "id": "ba36f523-7e85-4f6a-b3fb-20428ce53bf8"
+    },
+    {
+      "userName": "asmasa",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 5749375921,
+      "password": "121211214a1ss",
+      "id": "8104504e-4aea-4440-a664-cfb32f41f79b"
+    },
+    {
+      "userName": "asmasaas1s",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 2241566131,
+      "password": "121211214a1ss",
+      "id": "2bc58afb-1c71-4d31-9b1b-7f120bda6bd6"
+    },
+    {
+      "userName": "meirtodasas12_sa",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831042133,
+      "password": "121211214a1ssas",
+      "id": "2a98c871-de63-4f05-a7f1-b290764df48b"
+    },
+    {
+      "userName": "rajasi21_paul",
+      "fullName": "Rajasi Paul",
+      "mobileNumber": 4319548739,
+      "password": "rajasi99",
+      "id": "435a162d-67ca-458f-b3d3-8fa490490ce3"
+    },
+    {
+      "userName": "rajasi21_paul",
+      "fullName": "SamSarkar",
+      "mobileNumber": 2121212121,
+      "password": "rajasi99",
+      "id": "6bcff7a2-7fd6-4236-9179-747690c00307"
+    },
+    {
+      "userName": "rajasi21_paul",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 5749375921,
+      "password": "rajasi99",
+      "id": "294b94f2-2c0b-4ec6-9534-c8fcbeda145a"
+    },
+    {
+      "userName": "bishal_sarkar",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 6291182139,
+      "password": "bishal@123",
+      "id": "515ff43f-530c-421a-9ebb-97fcc26a2868"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 6391182318,
+      "password": "bishal@123",
+      "id": "9fe01cff-9a8a-442c-a1e8-b5ef49e653ec"
+    },
+    {
+      "userName": "samsarkar55",
+      "fullName": "Bishal dfjbhsd",
+      "mobileNumber": 232134213,
+      "password": "Samrat@12345",
+      "id": "9e8b5224-c83b-430d-b977-baa964b9127a"
+    },
+    {
+      "userName": "samsarkar55",
+      "fullName": "ghsgdffgh",
+      "mobileNumber": 4324265456,
+      "password": "Samrat@12345",
+      "id": "d42f737f-0258-42e0-8bc4-95f4c0b25123"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058933,
+      "password": "bishal@123",
+      "id": "9d4d31b0-3e7c-4a00-8d0f-85946b41405c"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 9831058933,
+      "password": "bishal@123",
+      "id": "bf7032c6-bade-4a23-bd17-1235ebdd209c"
+    },
+    {
+      "userName": "sayantan_3981",
+      "fullName": "Sayantan Dasgupta",
+      "mobileNumber": 8961007475,
+      "password": "Santah",
+      "id": "afd44923-f72d-478c-826e-61930422ac2d"
+    },
+    {
+      "userName": "bishal_singh",
+      "fullName": "Bishal Singh",
+      "mobileNumber": 4819437193,
+      "password": "bishal",
+      "id": "daa75f82-ad86-417e-8d4c-1d165265d3e9"
+    },
+    {
+      "userName": "bishal_sarkar2",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": 2121212145,
+      "password": "bishal@123",
+      "id": "0d9be258-d9f2-40e3-8e40-a27dcec8ce80"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Priti Deokar",
+      "designation": "Technology lead",
+      "department": "DX",
+      "emailid": "priti@gmail.com",
+      "skills": "Java",
+      "mobileNumber": "9845678438"
+    },
+    {
+      "id": 2,
+      "employee_name": "Mansi Sharma",
+      "designation": "Associate Consultant",
+      "department": "IVS",
+      "emailid": "mansi.sharma@gmail.com",
+      "skills": "Python",
+      "mobileNumber": 7865432789
+    },
+    {
+      "id": 4,
+      "employee_name": "Shubhangi Kamble",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "shubhangi13@gmail.com",
+      "skills": "Python",
+      "mobileNumber": 6486376423
+    },
+    {
+      "id": 7,
+      "employee_name": "Mansi Sharma",
+      "designation": "SE",
+      "department": "ECSADMC",
+      "emailid": "mansi.s432@gmail.com",
+      "skills": "Angular",
+      "mobileNumber": "9787867655"
+    }
+  ]
+}

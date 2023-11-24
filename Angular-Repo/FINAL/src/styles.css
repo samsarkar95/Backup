@@ -1,0 +1,8 @@
+body
+{
+     background-image: url('assets\R (1).jpg');  
+     background-size: 100%; 
+     padding-bottom : 25px;  
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,26 @@
+.panel-heading{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-styles{
+    height: 300px;
+    margin-top: 10%;
+    width:32%;
+    /* background-color: rgb(134, 134, 226); */
+    background: rgb(46, 74, 94);
+    background: linear-gradient(90deg,hsla(205, 46%, 30%, 1)0% , hsla(260,29%, 36%,1)100%);
+    border-radius: 7px;
+}
+.form-group{
+    color: #fff;
+}
+a{
+    color: #fff;
+}
+        
+        
+        
+        

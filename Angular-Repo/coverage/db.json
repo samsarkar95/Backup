@@ -1,0 +1,67 @@
+{
+  "signupUsers": [
+    {
+      "fullName": "",
+      "mobileNumber": "",
+      "userName": "admin",
+      "password": "admin@1234"
+    }
+  ],
+  "Users": [
+    {
+      "userName": "admin",
+      "password": "admin@1234"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "employee_name": "Shital Desai",
+      "designation": "SE",
+      "department": "Finacle",
+      "emailid": "shittal.desai@gmail.com"
+    },
+    {
+      "id": 2,
+      "employee_name": "Priti Deokar",
+      "designation": "SE",
+      "department": "IVS",
+      "emailid": "priti.01@gmail.com"
+    },
+    {
+      "id": 3,
+      "employee_name": "Shruti Patil",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "shruti@gmail.com"
+    },
+    {
+      "id": 4,
+      "employee_name": "Shubhangi Kamble",
+      "designation": "SE",
+      "department": "ENG",
+      "emailid": "shubhangi@gmail.com"
+    },
+    {
+      "id": 5,
+      "employee_name": "Aditya",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "aditya@gmail.com"
+    },
+    {
+      "id": 6,
+      "employee_name": "Aman",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "aman@gmail.com"
+    },
+    {
+      "id": 8,
+      "employee_name": "Sourabh",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "sourabh@gmail.com"
+    }
+  ]
+}
