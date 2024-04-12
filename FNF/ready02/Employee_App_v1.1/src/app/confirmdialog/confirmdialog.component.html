@@ -1,0 +1,6 @@
+<h1>Do you want to delete?</h1>
+<mat-dialog-actions align="end">
+
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" (click)="deleteEmployee()" cdkFocusInitial>Ok</button>
+  </mat-dialog-actions>

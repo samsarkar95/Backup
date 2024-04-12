@@ -1,0 +1,165 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #461057;">
+   <a class="navbar-brand" href="/list-emp"><img src="assets\logonew.png" alt="{{ title }}" style="height: 60px; width: 120px;margin-left: 30px;"></a>
+   <!-- <a class="navbar-brand" href="/list-emp"><img src="https://scontent.fidr4-3.fna.fbcdn.net/v/t39.30808-6/371059373_3326435944298070_984084667355181561_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=zraxcsPHLGgAX_vaYaP&_nc_ht=scontent.fidr4-3.fna&oh=00_AfCKTxNthKPZ2DbqKQONsJaXQ8emizN8CUO0IQ3GNp72qw&oe=64EF114D" alt="{{ title }}" style="height: 60px; width: 180px;margin-left: 30px;"></a> -->
+   <header><h1 style="margin-left: 380px; font-family: 'Times New Roman'; font-size: 2em; font-weight: bold; color: bisque;">Add Employee Form</h1></header>
+   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse " id="mainNavBar">
+     <ul class="navbar-nav ms-auto">
+       <li class="nav-item"><button class="nav-link" class="btn btn-danger" routerLink="/login" style="margin-right: 30px;">Logout</button></li>
+     </ul>
+   </div>
+ </nav>
+ 
+ <div class="col-md-6">  
+ 
+   <!-- <h2 class="text-center">{{empformlabel}}</h2>   -->
+ 
+   <form [formGroup]="addForm" novalidate class="form">  
+ 
+     <div class="form-group">  
+ 
+       <label for="empId">Employee Id:</label>  
+ 
+       <input type="number" formControlName="id" placeholder="Id" name="empId" class="form-control" id="empId">
+ 
+       <!-- <div class="alert  alert-danger" *ngIf="editForm.get['employee_name'].errors && addForm.get['employee_name'].touched"></div>  -->
+ 
+     </div>  
+ 
+  
+ 
+     <div class="form-group">  
+ 
+       <label for="empName">Employee Name:</label>  
+ 
+       <input type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.charCode == 8 || event.keyCode==32"
+        formControlName="employee_name" placeholder="Employee Name"  name="empName" class="form-control" id="empName">  
+ 
+       <!-- <div class="alert  alert-danger" *ngIf="editForm.get('employee_name').errors && addForm.get('employee_name').touched">   -->
+ 
+         <div class="alert  alert-danger" *ngIf="addForm.controls['employee_name'].errors && addForm.controls['employee_name'].touched">
+ 
+           Name should start with capital letter.*  
+ 
+       </div>  
+ 
+     </div>  
+ 
+  
+ 
+     <div class="form-group">  
+ 
+       <label for="designation">Designation:</label>  
+ 
+       <input formControlName="designation" placeholder="Designation"  name="designation" class="form-control" id="designation">  
+ 
+       <!-- <div class="alert  alert-danger" *ngIf=" editForm.get('designation').errors && addForm.get('designation').touched">   -->
+ 
+         <div class="alert  alert-danger" *ngIf="addForm.controls['designation'].errors && addForm.controls['designation'].touched">
+ 
+         Field is required.*   
+ 
+       </div>  
+ 
+     </div>
+ 
+ 
+ 
+     <div class="form-group">  
+ 
+       <label for="department">Department:</label>  
+ 
+       <input formControlName="department" placeholder="Department" name="department" class="form-control" id="department">  
+ 
+       <!-- <div class="alert  alert-danger" *ngIf="editForm.get('department').errors && addForm.get('department').touched"> -->
+ 
+         <div class="alert  alert-danger" *ngIf=" addForm.controls['department'].errors && addForm.controls['department'].touched">
+ 
+         Field is required.*  
+ 
+       </div>
+ 
+     </div>  
+ 
+ 
+ 
+    
+ 
+     <div class="form-group">  
+ 
+       <label for="emailid">Email:</label>  
+ 
+       <input type="email" pattern=".+gmail\.com" placeholder="EmailId" formControlName="emailid"  name="emailid" class="form-control" id="emailid">  
+ 
+       <!-- <div class="alert  alert-danger" *ngIf="editForm.get('emailid').errors && addForm.get('emailid').touched">   -->
+ 
+         <div class="alert  alert-danger" *ngIf=" addForm.controls['emailid'].errors && addForm.controls['emailid'].touched">
+ 
+           EmailId should contain '&#64;gmail.com'.*    
+ 
+       </div>  
+ 
+     </div>
+ 
+     <div class="form-group">  
+ 
+       <label for="skills">Skills:</label>  
+ 
+       <input type="text" formControlName="skills" placeholder="Skills" name="skills" class="form-control" id="skills">  
+ 
+       <div style="color: red;" *ngIf="addForm.controls['skills'].errors && addForm.controls['skills'].touched">  
+ 
+         Skills are required.*  
+ 
+       </div>
+      </div>  
+       <!-- <select #select placeholder="skills" name="skills" ngModel="{{empService.skills}}" class="form-control" id="skills">
+ 
+         <option value ="0">--Select Skill--</option>
+ 
+         <option value ="1">Python</option>
+ 
+         <option value ="2">Java</option>
+ 
+         <option value ="3">Angular</option>
+ 
+         <option value ="3">SpringBoot</option>
+ 
+         <option value ="3">AWS</option>
+ 
+         </select>  -->
+ 
+    
+ 
+     <div class="form-group">  
+ 
+       <label for="mobileNumber">Mobile Number:</label>  
+ 
+       <input type= "text"  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" maxLength="10" 
+       formControlName="mobileNumber"  placeholder="Mobile Number" name="mobileNumber" class="form-control" id="mobileNumber">  
+ 
+       <div style="color: red;" *ngIf="addForm.controls['mobileNumber'].errors && addForm.controls['mobileNumber'].touched">  
+ 
+         Mobile Number should contain 10 digits.* 
+ 
+       </div>
+ 
+     </div> 
+ 
+      <button style="margin-top: 10px;" class="btn btn-success" [disabled]="addForm.invalid" (click)="onSubmit()">Save</button>
+      
+      <button style="margin-top: 10px;background-color: grey;" class="btn">Reset</button>
+ 
+      <button style="margin-top: 10px;margin-bottom: 40px;" class="btn btn-danger" routerLink="/list-emp">Close</button>
+ 
+      
+ 
+  
+ 
+     <!-- <p>Form value: {{ editForm.value | json }}</p>     -->
+ 
+   </form>  
+ 
+ </div>  

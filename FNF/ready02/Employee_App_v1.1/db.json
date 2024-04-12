@@ -1,0 +1,274 @@
+{
+  "signupUsers": [
+    {
+      "id": "3b33"
+    }
+  ],
+  "Users": [
+    {
+      "userName": "priti123",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "Priti@123",
+      "id": "7ed8ab10-fd01-4f52-8d7c-03b9bb48614d"
+    },
+    {
+      "userName": "priti",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": 123456789,
+      "password": "priti@123",
+      "id": "82421eec-27dd-4cae-90d7-53eef05a57b5"
+    },
+    {
+      "userName": "admin",
+      "fullName": "Admin",
+      "mobileNumber": "3463746374",
+      "password": "admin",
+      "id": "9135cabd-529a-46cd-8c0e-3c4ba751b05d"
+    },
+    {
+      "userName": "sourabh",
+      "fullName": "Sourabh Parmar",
+      "mobileNumber": "123456789",
+      "password": "sourabh",
+      "id": "5e85a9dd-6ea9-43ec-ad18-778e61267c75"
+    },
+    {
+      "userName": "sourav",
+      "fullName": "sourav",
+      "mobileNumber": "3487583475",
+      "password": "sourav",
+      "id": "83f328a5-d996-4497-8825-b3ebc16fb460"
+    },
+    {
+      "userName": "mra",
+      "fullName": "mr a",
+      "mobileNumber": "4637654954",
+      "password": "mra",
+      "id": "4e5a6135-a115-46e6-8716-3854eee08852"
+    },
+    {
+      "userName": "priti",
+      "fullName": "Priti Pradeep Deokar",
+      "mobileNumber": "123456789",
+      "password": "priti@123",
+      "id": "bd6df0fe-47ba-4a6c-8404-f6e3948e6257"
+    },
+    {
+      "userName": "bishal_sarkar",
+      "fullName": "Bishal Sarkar",
+      "mobileNumber": "6291182139",
+      "password": "bishal@123",
+      "id": "40ad64ca-f51d-40d0-93ba-11ba0e62ed4c"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "employee_name": "A",
+      "designation": "SE",
+      "department": "IVS",
+      "emailid": "A@gmail.com",
+      "skills": "Python",
+      "mobileNumber": "5784565576"
+    },
+    {
+      "id": "2",
+      "employee_name": "B",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "B@gmail.com",
+      "skills": "Angular",
+      "mobileNumber": "4535455567"
+    },
+    {
+      "id": "3",
+      "employee_name": "C",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "c@gmail.com",
+      "skills": "JAVA",
+      "mobileNumber": "4637654954"
+    },
+    {
+      "id": "4",
+      "employee_name": "D",
+      "designation": "SE",
+      "department": "Finacle",
+      "emailid": "djehfj@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "4364578347"
+    },
+    {
+      "id": "5",
+      "employee_name": "E",
+      "designation": "SE",
+      "department": "Finacle",
+      "emailid": "e@gmail.com",
+      "skills": "MySQL",
+      "mobileNumber": "4637654954"
+    },
+    {
+      "id": "6",
+      "employee_name": "F",
+      "designation": "SSE",
+      "department": "DX",
+      "emailid": "f@gmail.com",
+      "skills": "DotNet",
+      "mobileNumber": "5784565576"
+    },
+    {
+      "id": "7",
+      "employee_name": "G",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "g@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "5646545646"
+    },
+    {
+      "id": "8",
+      "employee_name": "H",
+      "designation": "SSE",
+      "department": "IVS",
+      "emailid": "h@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "3874378546"
+    },
+    {
+      "id": "9",
+      "employee_name": "I",
+      "designation": "SSE",
+      "department": "SAP",
+      "emailid": "i@gmail.com",
+      "skills": "DotNet",
+      "mobileNumber": "3473648236"
+    },
+    {
+      "id": "10",
+      "employee_name": "J",
+      "designation": "SE",
+      "department": "ENG",
+      "emailid": "j@gmail.com",
+      "skills": "Angular",
+      "mobileNumber": "4236758265"
+    },
+    {
+      "id": "11",
+      "employee_name": "K",
+      "designation": "SE",
+      "department": "SAP",
+      "emailid": "k@gmail.com",
+      "skills": "JAVA",
+      "mobileNumber": "5475873458"
+    },
+    {
+      "id": "12",
+      "employee_name": "L",
+      "designation": "SSE",
+      "department": "SAP",
+      "emailid": "L@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "3487364384"
+    },
+    {
+      "id": "13",
+      "employee_name": "M",
+      "designation": "SE",
+      "department": "Finacle",
+      "emailid": "m@gmail.com",
+      "skills": "React",
+      "mobileNumber": "7673257326"
+    },
+    {
+      "id": "14",
+      "employee_name": "N",
+      "designation": "SE",
+      "department": "IVS",
+      "emailid": "n@gmail.com",
+      "skills": "DotNet",
+      "mobileNumber": "2345768976"
+    },
+    {
+      "id": "15",
+      "employee_name": "O",
+      "designation": "SSE",
+      "department": "IVS",
+      "emailid": "o@gmail.com",
+      "skills": "JAVA",
+      "mobileNumber": "324567890"
+    },
+    {
+      "id": "16",
+      "employee_name": "P",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "p@gmail.com",
+      "skills": "MySQL",
+      "mobileNumber": "2345678998"
+    },
+    {
+      "id": "17",
+      "employee_name": "Q",
+      "designation": "SSE",
+      "department": "ADM",
+      "emailid": "q@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "3245768908"
+    },
+    {
+      "id": "18",
+      "employee_name": "R",
+      "designation": "SE",
+      "department": "Finacle",
+      "emailid": "r@gmail.com",
+      "skills": "React",
+      "mobileNumber": "2345678907"
+    },
+    {
+      "id": "19",
+      "employee_name": "S",
+      "designation": "SSE",
+      "department": "ENG",
+      "emailid": "S@gmail.com",
+      "skills": "JAVA",
+      "mobileNumber": "3463784638"
+    },
+    {
+      "id": "20",
+      "employee_name": "T",
+      "designation": "SSE",
+      "department": "IVS",
+      "emailid": "tc@gmail.com",
+      "skills": "Python",
+      "mobileNumber": "9876854321"
+    },
+    {
+      "id": "21",
+      "employee_name": "U",
+      "designation": "SE",
+      "department": "ADM",
+      "emailid": "u@gmail.com",
+      "skills": "MongoDb",
+      "mobileNumber": "2345678995"
+    },
+    {
+      "id": "22",
+      "employee_name": "V",
+      "designation": "SSE",
+      "department": "ADM",
+      "emailid": "v@gmail.com",
+      "skills": "DotNet",
+      "mobileNumber": "3874378546"
+    },
+    {
+      "id": "24",
+      "employee_name": "Z",
+      "designation": "SSE",
+      "department": "ADM",
+      "emailid": "z@gmail.com",
+      "skills": "JAVA",
+      "mobileNumber": "4535455567"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "practice-ang",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~17.0.3",
+    "@angular/cdk": "^13.3.9",
+    "@angular/common": "~17.0.3",
+    "@angular/compiler": "~17.0.3",
+    "@angular/core": "~17.0.3",
+    "@angular/forms": "~17.0.3",
+    "@angular/material": "^13.3.9",
+    "@angular/platform-browser": "~17.0.3",
+    "@angular/platform-browser-dynamic": "~17.0.3",
+    "@angular/router": "~17.0.3",
+    "bootstrap": "^5.2.3",
+    "lodash": "^4.17.21",
+    "ng2-search-filter": "^0.5.1",
+    "ngx-order-pipe": "^2.2.0",
+    "rxjs": "~7.4.0",
+    "uuid": "^9.0.1",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.10",
+    "@angular/cli": "^17.0.1",
+    "@angular/compiler-cli": "~17.0.3",
+    "@types/jasmine": "~3.10.0",
+    "@types/lodash": "^4.14.192",
+    "@types/node": "^12.11.1",
+    "@types/uuid": "^9.0.4",
+    "jasmine-core": "~3.10.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "tslib": "^2.6.2",
+    "typescript": "~5.2.2"
+  }
+}

@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #461057;">
+    <a class="navbar-brand" href="/list-emp"><img src="assets\logonew.png" alt="{{ title }}" style="height: 60px; width: 120px;margin-left: 30px;"></a>
+    <header><h1 style="margin-left: 380px; font-family: 'Times New Roman'; font-size: 2em; font-weight: bold; color: bisque;">Employee Details</h1></header>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="mainNavBar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><button class="nav-link" class="btn btn-danger" routerLink="/login" style="margin-right: 30px;">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="col-md-6">
+    <div class="card" style="width: 35rem; margin-left: 15%; margin-top: 12%;">
+        <div class="card-body">
+<h2 style="text-align: center;">{{ empService.employee_name }}</h2>
+        </div>
+
+        <table class="table table-hover mx-auto">
+
+          <tbody>
+   
+           <tr>
+   
+             <td class="fw-bold">Employee Id</td>
+   
+             <td>{{empService.id}}</td>
+   
+           </tr>
+
+           <tr>
+   
+            <td class="fw-bold">Designation</td>
+  
+            <td>{{empService.designation}}</td>
+  
+          </tr>
+
+          <tr>
+   
+            <td class="fw-bold">Department</td>
+  
+            <td>{{empService.department}}</td>
+  
+          </tr>
+
+          <tr>
+   
+            <td class="fw-bold">Email Id</td>
+  
+            <td>{{empService.emailid}}</td>
+  
+          </tr>
+
+          <tr>
+   
+            <td class="fw-bold">Skills</td>
+  
+            <td>{{empService.skills}}</td>
+  
+          </tr>
+
+          <tr>
+   
+            <td class="fw-bold">Mobile Number</td>
+  
+            <td>{{empService.mobileNumber}}</td>
+  
+          </tr>
+
+          </tbody>
+          
+        </table>
+        <button style="margin-top: 5pxpx; margin-left: 40%; margin-right: 40%;margin-bottom: 5px;" class="btn btn-danger" (click)="onClose()">Close</button>
+    </div>
+</div>
